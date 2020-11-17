@@ -1,26 +1,25 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import Nav from "components/layout/Nav";
+import UserProfile from "components/UserProfile";
+import Feed from "components/Feed";
+// import Contacts from "components/Contacts";
+
+const App: React.FC<{}> = () => {
+    return (
+        <div className="font-body bg-gray">
+            <Router>
+                <Nav />
+                <div className="grid grid-cols-4 gap-4 h-body">
+                    <UserProfile />
+                    <Switch>
+                        <Route path="/sample" component={Feed} />
+                    </Switch>
+                </div>
+            </Router>
+        </div>
+    );
+};
 
 export default App;
