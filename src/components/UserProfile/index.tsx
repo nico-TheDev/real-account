@@ -7,7 +7,7 @@ export default function UserProfile() {
             <img
                 src="https://randomuser.me/api/portraits/men/17.jpg"
                 alt="user"
-                className="rounded-full w-32 h-32"
+                className="rounded-full w-32 h-32 m-auto"
             />
             <h2 className="text-center text-lg font-head mt-2 font-semibold text-gray-800">
                 John Doe
