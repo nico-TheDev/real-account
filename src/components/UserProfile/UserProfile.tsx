@@ -3,15 +3,15 @@ import UserNavi from "./UserNavi";
 
 const UserProfile: React.FC<{}> = () => {
     return (
-        <div className="h-full grid justify-center px-4 py-12 content-start">
+        <div className="h-full grid justify-center px-4 py-12 content-start border-4 border-gray-400">
             <img
                 src="https://randomuser.me/api/portraits/men/17.jpg"
                 alt="user"
-                className="rounded-full w-32 h-32"
+                className="rounded-full w-32 h-32 m-auto border-red-300 bg-red-700"
             />
             <h2 className="text-center text-lg font-head mt-2 font-semibold text-gray-800">
                 John Doe
-                <span className="block text-sm text-gray-400 font-light">
+                <span className="block text-gray-400 font-light text-3xl">
                     NYC
                 </span>
             </h2>
