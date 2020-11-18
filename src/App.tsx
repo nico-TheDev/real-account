@@ -8,13 +8,13 @@ import Feed from "components/Feed";
 
 const App: React.FC<{}> = () => {
     return (
-        <div className="font-body bg-gray">
+        <div className="font-body bg-grayMain">
             <Router>
                 <Nav />
                 <div className="grid grid-cols-4 gap-4 h-body">
                     <UserProfile />
                     <Switch>
-                        <Route path="/sample" component={Feed} />
+                        <Route path="/activity" component={Feed} />
                     </Switch>
                 </div>
             </Router>

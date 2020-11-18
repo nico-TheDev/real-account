@@ -12,7 +12,7 @@ module.exports = {
             },
             colors: {
                 main: "#46C8DC",
-                gray: "#D8E4EB",
+                grayMain: "#D8E4EB",
                 midbrown: "#A38978",
                 lightbrown: "#D5B383",
                 lightblue: "#9ECDEC",
@@ -22,6 +22,9 @@ module.exports = {
                 nav2: "12vh",
                 nav3: "15vh",
                 body: "88vh",
+            },
+            inset: {
+                "1/2": "-50%",
             },
         },
     },
