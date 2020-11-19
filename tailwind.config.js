@@ -28,6 +28,11 @@ module.exports = {
             },
         },
     },
-    variants: {},
+    variants: {
+        extend: {
+            backgroundColor: ["group-hover"],
+            backgroundOpacity: ["group-hover"],
+        },
+    },
     plugins: [],
 };
